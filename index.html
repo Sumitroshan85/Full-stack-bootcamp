@@ -3,56 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>form</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Student Registration Form</h1>
 
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" name="name"><br><br>
+    <h1>Time Table </h1>
+    <Table border="1" cellpadding="10" cellspacing="3" width="100%" height="50%">
+        <tr>
+            <th>Day/Period</th>
+            <th>I<br>9:30-<br>10:20</th>
+            <th>II <br>10:20-<br>12:40</th>
+            <th>III <br>12:00-<br>12:40</th>
+            <th>12:40-<br>1:30</th>
+            <th>IV <br>12:40-<br>1:30</th>
+            <th>V<br>1:30-<br>2:20</th>
+            <th>VI <br>2:20-<br>3:10</th>
+            <th>VII <br>3:10-<br>4:00</th>
+        </tr>
+        <!--first row-->
+        <tr>
+            <th>Monday</th>
+            <th>Eng</th>
+            <th>Mat</th>
+            <th>Che</th>
+            <th rowspan="5">LUNCH</th>
+            <th colspan="3">LAB</th>
+            <th>Phy</th>
+        </tr>
+ 
+        <!--second row-->
+        <tr>
+            <th>Tuesday</th>
+            <th colspan="3">LAB</th>
+            <th>Eng</th>
+            <th>Che</th>
+            <th>Mat</th>
+            <th>SPORTS</th>
+        </tr>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email"><br><br>
+        <!--third row-->
+        <tr>
+            <th>Wednesday</th>
+            <th>Mat</th>
+            <th>Phy</th>
+            <th>Eng</th>
+            <th>Che</th>
+            <th colspan="3">Library</th>
+        </tr>
 
-        <label for="Roll No">Roll No:</label>
-        <input type="text" name="rollno"><br><br>
+        <!--fourth row-->
+        <tr>
+            <th>Thursday</th>
+            <th>Phy</th>
+            <th>Eng</th>
+            <th>Che</th>
+            <th colspan="3">Lab</th>
+            <th>Mat</th>
+        </tr>
 
-         <label for="date">Date of Birth : </label>
-        <input id="date"  type="date"/><br><br>
-
-        <label>Address :</label><br>
-        <textarea rows="10"></textarea><br><br>
-
-        <label>Class :</label>
-        <select>
-            <option>Sem 1</option>
-            <option>Sem 2</option>
-            <option>Sem 3</option>
-        </select><br><br>
-        
-        <label>Favorite Subject</label>
-        <input list="subject"/>
-
-        <datalist id="subject">
-            <option value="DSA">
-            <option value="MERN">
-            <option value="Java">
-        </datalist><br><br>
-
-        <label>Gender : </label><br>
-        <input type="radio" name="gender"/> Male
-        <input type="radio" name="gender"/> Female
-        <input type="radio" name="gender"/> Others<br><br>
-
-        <label>Hobbies :</label><br>
-        <input type="checkbox"/>Codding
-        <input type="checkbox"/>Running
-        <input type="checkbox"/>Reading<br><br>
-
-        <button type="submit">Submit</button>
-
-
-    </form>
+        <!--fifth row-->
+        <tr>
+            <th>Friday</th>
+            <th>Phy</th>
+            <th>Eng</th>
+            <th>Che</th>
+            <th colspan="3">LAB</th>
+            <th>Mat</th>
+        </tr>
+    </Table>
 </body>
 </html>
